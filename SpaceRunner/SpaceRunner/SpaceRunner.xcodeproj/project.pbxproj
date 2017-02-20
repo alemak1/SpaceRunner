@@ -27,9 +27,9 @@
 		BD720D2F1E5AFB7B001BA4DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD720D321E5AFB7B001BA4DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD720D341E5AFB7B001BA4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD720D3A1E5AFBB8001BA4DB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		BD720D3C1E5AFC7D001BA4DB /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
-		BD720D3E1E5AFEA0001BA4DB /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		BD720D3A1E5AFBB8001BA4DB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
+		BD720D3C1E5AFC7D001BA4DB /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuScene.swift; path = ../MenuScene.swift; sourceTree = "<group>"; };
+		BD720D3E1E5AFEA0001BA4DB /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameOverScene.swift; path = ../GameOverScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,9 +46,6 @@
 		BD720D161E5AFB7B001BA4DB = {
 			isa = PBXGroup;
 			children = (
-				BD720D3A1E5AFBB8001BA4DB /* Constants.swift */,
-				BD720D3C1E5AFC7D001BA4DB /* MenuScene.swift */,
-				BD720D3E1E5AFEA0001BA4DB /* GameOverScene.swift */,
 				BD720D211E5AFB7B001BA4DB /* SpaceRunner */,
 				BD720D201E5AFB7B001BA4DB /* Products */,
 			);
@@ -65,15 +62,50 @@
 		BD720D211E5AFB7B001BA4DB /* SpaceRunner */ = {
 			isa = PBXGroup;
 			children = (
-				BD720D221E5AFB7B001BA4DB /* AppDelegate.swift */,
-				BD720D281E5AFB7B001BA4DB /* GameScene.swift */,
-				BD720D2A1E5AFB7B001BA4DB /* GameViewController.swift */,
-				BD720D2C1E5AFB7B001BA4DB /* Main.storyboard */,
+				BD720D441E5B04A9001BA4DB /* Utilities */,
+				BD720D431E5B048E001BA4DB /* Storyboards */,
+				BD720D421E5B0479001BA4DB /* ViewController */,
+				BD720D411E5B045C001BA4DB /* Scenes */,
 				BD720D2F1E5AFB7B001BA4DB /* Assets.xcassets */,
-				BD720D311E5AFB7B001BA4DB /* LaunchScreen.storyboard */,
 				BD720D341E5AFB7B001BA4DB /* Info.plist */,
 			);
 			path = SpaceRunner;
+			sourceTree = "<group>";
+		};
+		BD720D411E5B045C001BA4DB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BD720D3C1E5AFC7D001BA4DB /* MenuScene.swift */,
+				BD720D281E5AFB7B001BA4DB /* GameScene.swift */,
+				BD720D3E1E5AFEA0001BA4DB /* GameOverScene.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		BD720D421E5B0479001BA4DB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BD720D221E5AFB7B001BA4DB /* AppDelegate.swift */,
+				BD720D2A1E5AFB7B001BA4DB /* GameViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		BD720D431E5B048E001BA4DB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BD720D311E5AFB7B001BA4DB /* LaunchScreen.storyboard */,
+				BD720D2C1E5AFB7B001BA4DB /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		BD720D441E5B04A9001BA4DB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BD720D3A1E5AFBB8001BA4DB /* Constants.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
