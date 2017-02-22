@@ -16,6 +16,7 @@
 		BD373EA81E5D6C7100581A65 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD373EA71E5D6C7100581A65 /* PlayButton.swift */; };
 		BD373EAA1E5D71A400581A65 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD373EA91E5D71A400581A65 /* Math.swift */; };
 		BD373EAC1E5D72E400581A65 /* GameParticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD373EAB1E5D72E400581A65 /* GameParticles.swift */; };
+		BD373EAF1E5D796100581A65 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD373EAE1E5D796100581A65 /* Background.swift */; };
 		BD720D231E5AFB7B001BA4DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD720D221E5AFB7B001BA4DB /* AppDelegate.swift */; };
 		BD720D291E5AFB7B001BA4DB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD720D281E5AFB7B001BA4DB /* GameScene.swift */; };
 		BD720D2B1E5AFB7B001BA4DB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD720D2A1E5AFB7B001BA4DB /* GameViewController.swift */; };
@@ -37,6 +38,7 @@
 		BD373EA71E5D6C7100581A65 /* PlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		BD373EA91E5D71A400581A65 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		BD373EAB1E5D72E400581A65 /* GameParticles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameParticles.swift; sourceTree = "<group>"; };
+		BD373EAE1E5D796100581A65 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		BD720D1F1E5AFB7B001BA4DB /* SpaceRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD720D221E5AFB7B001BA4DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD720D281E5AFB7B001BA4DB /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 			name = Interface;
 			sourceTree = "<group>";
 		};
+		BD373EAD1E5D795000581A65 /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				BD373EAE1E5D796100581A65 /* Background.swift */,
+			);
+			name = Background;
+			sourceTree = "<group>";
+		};
 		BD720D161E5AFB7B001BA4DB = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 		BD720D211E5AFB7B001BA4DB /* SpaceRunner */ = {
 			isa = PBXGroup;
 			children = (
+				BD373EAD1E5D795000581A65 /* Background */,
 				BD373EA01E5D685100581A65 /* Interface */,
 				BD373E9D1E5D5DE000581A65 /* Singletons */,
 				BD373E991E5D588900581A65 /* GameResources */,
@@ -238,6 +249,7 @@
 				BD373EA41E5D6A2600581A65 /* SpriteName.swift in Sources */,
 				BD373EA21E5D687200581A65 /* GameLogo.swift in Sources */,
 				BD720D3B1E5AFBB8001BA4DB /* Constants.swift in Sources */,
+				BD373EAF1E5D796100581A65 /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
