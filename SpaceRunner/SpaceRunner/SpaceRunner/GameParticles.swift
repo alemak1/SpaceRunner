@@ -62,6 +62,27 @@ class GameParticles{
     
     
     private func setupEngineEmitter(){
+        //Birthrate and Lifetime
+        backgroundEmitter.particleBirthRate = 25.0
+        backgroundEmitter.particleLifetime = 0.5
+        
+        //Position Range
+        backgroundEmitter.particlePositionRange = CGVector(dx: 0, dy: 0)
+        
+        //Speed
+        backgroundEmitter.particleSpeed = -80.0
+       
+        //Angle
+        backgroundEmitter.emissionAngle = DegreesToRadians(degrees: 90)
+        
+        //Color Blending
+        backgroundEmitter.particleColorBlendFactor = 1.0
+        
+        //Color
+        backgroundEmitter.particleColor = Colors.colorFromRGB(rgbValue: Colors.engine)
+        
+        //Texture
+        backgroundEmitter.particleTexture = GameTextures.sharedInstance.texture(name: SpriteName.magic)
         
     }
     
