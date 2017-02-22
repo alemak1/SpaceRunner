@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BD373E9A1E5D588900581A65 /* GameResources in Resources */ = {isa = PBXBuildFile; fileRef = BD373E991E5D588900581A65 /* GameResources */; };
+		BD373E9C1E5D5BE300581A65 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD373E9B1E5D5BE300581A65 /* Colors.swift */; };
 		BD720D231E5AFB7B001BA4DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD720D221E5AFB7B001BA4DB /* AppDelegate.swift */; };
 		BD720D291E5AFB7B001BA4DB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD720D281E5AFB7B001BA4DB /* GameScene.swift */; };
 		BD720D2B1E5AFB7B001BA4DB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD720D2A1E5AFB7B001BA4DB /* GameViewController.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		BD373E991E5D588900581A65 /* GameResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GameResources; sourceTree = "<group>"; };
+		BD373E9B1E5D5BE300581A65 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		BD720D1F1E5AFB7B001BA4DB /* SpaceRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD720D221E5AFB7B001BA4DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD720D281E5AFB7B001BA4DB /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				BD720D3A1E5AFBB8001BA4DB /* Constants.swift */,
+				BD373E9B1E5D5BE300581A65 /* Colors.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				BD720D291E5AFB7B001BA4DB /* GameScene.swift in Sources */,
 				BD720D2B1E5AFB7B001BA4DB /* GameViewController.swift in Sources */,
 				BD720D3D1E5AFC7D001BA4DB /* MenuScene.swift in Sources */,
+				BD373E9C1E5D5BE300581A65 /* Colors.swift in Sources */,
 				BD720D231E5AFB7B001BA4DB /* AppDelegate.swift in Sources */,
 				BD720D3F1E5AFEA0001BA4DB /* GameOverScene.swift in Sources */,
 				BD720D3B1E5AFBB8001BA4DB /* Constants.swift in Sources */,
