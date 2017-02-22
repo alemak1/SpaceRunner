@@ -19,13 +19,14 @@ class GameLogo: SKSpriteNode {
     }
     
     convenience init() {
-        let texture = SKTexture() //Replace with code to get a texture from the atlas
+        let texture = GameTextures.sharedInstance.texture(name: SpriteName.logo) //Replace with code to get a texture from the atlas
         self.init(texture: texture, color: SKColor.white, size: texture.size())
         setup()
     }
     
     
     private func setup(){
+        self.position = CGPoint(x: kViewSize.width/2, y: kViewSize.height/2)
         
     }
 }
