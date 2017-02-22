@@ -13,5 +13,5 @@ class SpriteName{
     class var logo: String { return "GameLogo" }
     class var title: String { return "GameTitle" }
     class var playButton: String { return "PlayButton" }
-    
+    class var magic: String { return "Magic" }
 }
