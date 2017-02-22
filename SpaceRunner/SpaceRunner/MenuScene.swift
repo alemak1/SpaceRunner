@@ -11,7 +11,11 @@ import SpriteKit
 class MenuScene: SKScene {
     
     //MARK: - Private Instance Variables
-    private var sceneLabel: SKLabelNode?
+    private let logo = GameLogo()
+    private let title = GameTitle()
+    private let playButton = PlayButton()
+    
+    
     
     //MARK: - Init
     required init?(coder aDecoder: NSCoder) {
@@ -29,13 +33,11 @@ class MenuScene: SKScene {
     
     //MARK: - Setup
     private func setup(){
-        self.backgroundColor = SKColor.black
-        sceneLabel = SKLabelNode(fontNamed: "Arial")
-        sceneLabel?.text = "MenuScene"
-        sceneLabel?.fontSize = 32.0
-        sceneLabel?.fontColor = SKColor.white
-        sceneLabel?.position = CGPoint(x: kViewSize.width/2, y: kViewSize.height/2)
-        self.addChild(sceneLabel!)
+        self.backgroundColor = Colors.colorFromRGB(rgbValue: Colors.background)
+        self.addChild(logo)
+        self.addChild(title)
+        self.addChild(playButton)
+        
     }
     
     //MARK: - Update
@@ -47,7 +49,7 @@ class MenuScene: SKScene {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch: UITouch = touches.first! as UITouch
         let touchLocation = touch.location(in: self)
-        if (sceneLabel!.contains(touchLocation)){
+        if (playButton.contains(touchLocation)){
             loadScene()
         }
         

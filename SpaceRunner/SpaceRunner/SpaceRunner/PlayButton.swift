@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SpriteKit
 
 class PlayButton: SKSpriteNode {
     required init?(coder aDecoder: NSCoder){
@@ -19,7 +20,7 @@ class PlayButton: SKSpriteNode {
     }
     
     convenience init() {
-        let texture = GameTextures.sharedInstance.sprite(name: SpriteName.playButton) //Replace with code to get a texture from the atlas
+        let texture = GameTextures.sharedInstance.texture(name: SpriteName.playButton) //Replace with code to get a texture from the atlas
         self.init(texture: texture, color: SKColor.white, size: texture.size())
         setup()
     }

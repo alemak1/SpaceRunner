@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SpriteKit
 
 class GameLogo: SKSpriteNode {
     required init?(coder aDecoder: NSCoder){
