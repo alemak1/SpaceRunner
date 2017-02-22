@@ -14,6 +14,7 @@
 		BD373EA41E5D6A2600581A65 /* SpriteName.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD373EA31E5D6A2600581A65 /* SpriteName.swift */; };
 		BD373EA61E5D6BC300581A65 /* GameTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD373EA51E5D6BC300581A65 /* GameTitle.swift */; };
 		BD373EA81E5D6C7100581A65 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD373EA71E5D6C7100581A65 /* PlayButton.swift */; };
+		BD373EAA1E5D71A400581A65 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD373EA91E5D71A400581A65 /* Math.swift */; };
 		BD720D231E5AFB7B001BA4DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD720D221E5AFB7B001BA4DB /* AppDelegate.swift */; };
 		BD720D291E5AFB7B001BA4DB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD720D281E5AFB7B001BA4DB /* GameScene.swift */; };
 		BD720D2B1E5AFB7B001BA4DB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD720D2A1E5AFB7B001BA4DB /* GameViewController.swift */; };
@@ -33,6 +34,7 @@
 		BD373EA31E5D6A2600581A65 /* SpriteName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteName.swift; sourceTree = "<group>"; };
 		BD373EA51E5D6BC300581A65 /* GameTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTitle.swift; sourceTree = "<group>"; };
 		BD373EA71E5D6C7100581A65 /* PlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		BD373EA91E5D71A400581A65 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		BD720D1F1E5AFB7B001BA4DB /* SpaceRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD720D221E5AFB7B001BA4DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD720D281E5AFB7B001BA4DB /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				BD720D3A1E5AFBB8001BA4DB /* Constants.swift */,
 				BD373E9B1E5D5BE300581A65 /* Colors.swift */,
 				BD373EA31E5D6A2600581A65 /* SpriteName.swift */,
+				BD373EA91E5D71A400581A65 /* Math.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD720D291E5AFB7B001BA4DB /* GameScene.swift in Sources */,
+				BD373EAA1E5D71A400581A65 /* Math.swift in Sources */,
 				BD720D2B1E5AFB7B001BA4DB /* GameViewController.swift in Sources */,
 				BD720D3D1E5AFC7D001BA4DB /* MenuScene.swift in Sources */,
 				BD373E9F1E5D5DFD00581A65 /* GameTextures.swift in Sources */,
