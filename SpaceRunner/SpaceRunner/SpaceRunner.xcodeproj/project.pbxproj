@@ -12,6 +12,7 @@
 		BD373E9F1E5D5DFD00581A65 /* GameTextures.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD373E9E1E5D5DFD00581A65 /* GameTextures.swift */; };
 		BD373EA21E5D687200581A65 /* GameLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD373EA11E5D687200581A65 /* GameLogo.swift */; };
 		BD373EA41E5D6A2600581A65 /* SpriteName.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD373EA31E5D6A2600581A65 /* SpriteName.swift */; };
+		BD373EA61E5D6BC300581A65 /* GameTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD373EA51E5D6BC300581A65 /* GameTitle.swift */; };
 		BD720D231E5AFB7B001BA4DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD720D221E5AFB7B001BA4DB /* AppDelegate.swift */; };
 		BD720D291E5AFB7B001BA4DB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD720D281E5AFB7B001BA4DB /* GameScene.swift */; };
 		BD720D2B1E5AFB7B001BA4DB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD720D2A1E5AFB7B001BA4DB /* GameViewController.swift */; };
@@ -29,6 +30,7 @@
 		BD373E9E1E5D5DFD00581A65 /* GameTextures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTextures.swift; sourceTree = "<group>"; };
 		BD373EA11E5D687200581A65 /* GameLogo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLogo.swift; sourceTree = "<group>"; };
 		BD373EA31E5D6A2600581A65 /* SpriteName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteName.swift; sourceTree = "<group>"; };
+		BD373EA51E5D6BC300581A65 /* GameTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTitle.swift; sourceTree = "<group>"; };
 		BD720D1F1E5AFB7B001BA4DB /* SpaceRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD720D221E5AFB7B001BA4DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD720D281E5AFB7B001BA4DB /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				BD373EA11E5D687200581A65 /* GameLogo.swift */,
+				BD373EA51E5D6BC300581A65 /* GameTitle.swift */,
 			);
 			name = Interface;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				BD373E9F1E5D5DFD00581A65 /* GameTextures.swift in Sources */,
 				BD373E9C1E5D5BE300581A65 /* Colors.swift in Sources */,
 				BD720D231E5AFB7B001BA4DB /* AppDelegate.swift in Sources */,
+				BD373EA61E5D6BC300581A65 /* GameTitle.swift in Sources */,
 				BD720D3F1E5AFEA0001BA4DB /* GameOverScene.swift in Sources */,
 				BD373EA41E5D6A2600581A65 /* SpriteName.swift in Sources */,
 				BD373EA21E5D687200581A65 /* GameLogo.swift in Sources */,
