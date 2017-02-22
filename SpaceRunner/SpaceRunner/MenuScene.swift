@@ -9,6 +9,10 @@
 import SpriteKit
 
 class MenuScene: SKScene {
+    
+    //MARK: - Private Instance Variables
+    private var sceneLabel: SKLabelNode?
+    
     //MARK: - Init
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -26,6 +30,12 @@ class MenuScene: SKScene {
     //MARK: - Setup
     private func setup(){
         self.backgroundColor = SKColor.black
+        sceneLabel = SKLabelNode(fontNamed: "Arial")
+        sceneLabel?.text = "MenuScene"
+        sceneLabel?.fontSize = 32.0
+        sceneLabel?.fontColor = SKColor.white
+        sceneLabel?.position = CGPoint(x: kViewSize.width/2, y: kViewSize.height/2)
+        self.addChild(sceneLabel!)
     }
     
     //MARK: - Update
