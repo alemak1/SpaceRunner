@@ -15,7 +15,7 @@ class GameTitle: SKSpriteNode {
     }
     
     
-    override init(texture: SKTexture?, color: UIColor, size: CGSize){
+    override init(texture: SKTexture?, color: SKColor, size: CGSize){
         super.init(texture: texture, color: color, size: size)
     }
     

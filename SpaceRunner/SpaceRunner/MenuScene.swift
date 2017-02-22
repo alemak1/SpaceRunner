@@ -13,7 +13,7 @@ class MenuScene: SKScene {
     //MARK: - Private Instance Variables
     private let logo = GameLogo()
     private let title = GameTitle()
-    private let playButton = PlayButton()
+    //private let playButton = PlayButton()
     
     
     
@@ -36,7 +36,7 @@ class MenuScene: SKScene {
         self.backgroundColor = Colors.colorFromRGB(rgbValue: Colors.background)
         self.addChild(logo)
         self.addChild(title)
-        self.addChild(playButton)
+       // self.addChild(playButton)
         
     }
     
@@ -49,7 +49,7 @@ class MenuScene: SKScene {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch: UITouch = touches.first! as UITouch
         let touchLocation = touch.location(in: self)
-        if (playButton.contains(touchLocation)){
+        if (title.contains(touchLocation)){
             loadScene()
         }
         
