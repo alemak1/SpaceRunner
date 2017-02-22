@@ -9,6 +9,8 @@
 import SpriteKit
 
 class GameOverScene: SKScene {
+    //MARK: Private instance variables
+    private var sceneLabel: SKLabelNode?
 
     //MARK: - Init
     required init?(coder aDecoder: NSCoder) {
@@ -27,6 +29,14 @@ class GameOverScene: SKScene {
     //MARK: - Setup
     private func setup(){
         self.backgroundColor = SKColor.black
+        
+        sceneLabel = SKLabelNode(fontNamed: "Arial")
+        sceneLabel?.text = "GameOver"
+        sceneLabel?.fontSize = 32.0
+        sceneLabel?.fontColor = SKColor.white
+        sceneLabel?.position = CGPoint(x: kViewSize.width/2, y: kViewSize.height/2)
+        self.addChild(sceneLabel!)
+        
     }
     
     //MARK: - Update
@@ -36,6 +46,20 @@ class GameOverScene: SKScene {
     
     //MARK: - Touch Handling
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let touch: UITouch = touches.first! as UITouch
+        let touchLoaction = touch.location(in: self)
+        if sceneLabel!.contains(touchLoaction){
+            loadScene()
+        }
+        
+    }
+    
+    //MARK: - Load Scene
+    private func loadScene(){
+        let scene = MenuScene(size: kViewSize)
+        let transition = SKTransition.fade(with: SKColor.black, duration: 0.5)
+        self.view?.presentScene(scene, transition: transition)
+        
         
     }
     
