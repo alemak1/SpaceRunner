@@ -8,10 +8,12 @@
 
 import Foundation
 
-func DegreesToRadians(degrees: CGFloat) -> CGFloat{
-    return degrees*CGFloat(M_PI)/180.0
-}
-
-func RadiansToDegrees(radians: CGFloat) -> CGFloat{
-    return radians * 180.0/CGFloat(M_PI)
-}
+//typealias DegreeType = CGFloat
+//
+//func DegreesToRadians(degrees: DegreeType) -> DegreeType{
+//    return degrees*CGFloat(M_PI)/180.0
+//}
+//
+//func RadiansToDegrees(radians: DegreeType) -> DegreeType{
+//    return radians * CGFloat(180.0)/M_PI
+//}

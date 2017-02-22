@@ -41,8 +41,8 @@ class GameParticles{
         backgroundEmitter.particleSpeedRange = backgroundEmitter.particleSpeed/4
         
         //Emission Angle
-        backgroundEmitter.emissionAngle = DegreesToRadians(degrees: -90.0)
-        backgroundEmitter.emissionAngleRange = DegreesToRadians(degrees: 15)
+        backgroundEmitter.emissionAngle = CGFloat(-90.0*(M_PI)/180.0)
+        backgroundEmitter.emissionAngleRange = CGFloat(15.0*(M_PI)/180.0)
         
         //Alpha
         backgroundEmitter.particleAlpha = 0.5
@@ -73,7 +73,7 @@ class GameParticles{
         backgroundEmitter.particleSpeed = -80.0
        
         //Angle
-        backgroundEmitter.emissionAngle = DegreesToRadians(degrees: 90)
+        backgroundEmitter.emissionAngle = CGFloat(90.0*(M_PI)/180.0)
         
         //Color Blending
         backgroundEmitter.particleColorBlendFactor = 1.0

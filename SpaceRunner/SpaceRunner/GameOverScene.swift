@@ -9,6 +9,10 @@
 import SpriteKit
 
 class GameOverScene: SKScene {
+    
+    //MARK: - Private instance constants
+    private let background = Background()
+    
     //MARK: Private instance variables
     private var sceneLabel: SKLabelNode?
 
@@ -28,7 +32,8 @@ class GameOverScene: SKScene {
     
     //MARK: - Setup
     private func setup(){
-        self.backgroundColor = SKColor.black
+        self.backgroundColor = Colors.colorFromRGB(rgbValue: Colors.background)
+        self.addChild(background)
         
         sceneLabel = SKLabelNode(fontNamed: "Arial")
         sceneLabel?.text = "GameOver"

@@ -13,6 +13,9 @@ class GameScene: SKScene {
     
     var sceneLabel: SKLabelNode?
     
+    //MARK: - Private Instance Constants
+    private var background = Background()
+    
     //MARK: - Init
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -29,7 +32,8 @@ class GameScene: SKScene {
     
     //MARK: - Setup
     private func setup(){
-        self.backgroundColor = SKColor.black
+        self.backgroundColor = Colors.colorFromRGB(rgbValue: Colors.background)
+        self.addChild(background)
         
         sceneLabel = SKLabelNode(fontNamed: "Arial")
         sceneLabel?.fontColor = SKColor.white

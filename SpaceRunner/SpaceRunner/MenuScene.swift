@@ -10,6 +10,9 @@ import SpriteKit
 
 class MenuScene: SKScene {
     
+    private let background = Background()
+    
+    
     //MARK: - Private Instance Variables
     private let logo = GameLogo()
     private let title = GameTitle()
@@ -37,6 +40,7 @@ class MenuScene: SKScene {
         self.addChild(logo)
         self.addChild(title)
        // self.addChild(playButton)
+        self.addChild(background)
         
     }
     
