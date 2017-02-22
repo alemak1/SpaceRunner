@@ -45,7 +45,20 @@ class MenuScene: SKScene {
     
     //MARK: - Touch Handling
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let touch: UITouch = touches.first! as UITouch
+        let touchLocation = touch.location(in: self)
+        if (sceneLabel!.contains(touchLocation)){
+            loadScene()
+        }
         
+    }
+    
+    //MARK: - Load Scene
+    
+    private func loadScene(){
+        let scene = GameScene(size: kViewSize)
+        let transition = SKTransition.fade(with: SKColor.black, duration: 0.5)
+        self.view?.presentScene(scene, transition: transition)
     }
 }
 
